@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.main-content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.is--right {
+    color: var(--right);
+}
+
+.is--wrong {
+    color: var(--error);
+}
+
+.is--hidden {
+    display: none;
+}

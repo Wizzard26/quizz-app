@@ -1,0 +1,23 @@
+:root {
+    --error: #be0000;
+    --right: #6cce02;
+    --floatText: #323232;
+    --bgHeader: #f2f2f2;
+    --bgFooter: #f2f2f2;
+    --shadowColor: #444444;
+    --bookmarColor: #323232;
+    --cardBg: #efefef;
+    --cardBorderColor: #969696;
+    --cardShadow: #969696;
+    --cardAnswerBg: #e4dfdf;
+    --cardAnswerBorder: #d7d6d6;
+    --keyItemBg: #565656;
+    --keyItemColor: #f2f2f2;
+    --counterBg: #323232;
+    --counterColor: #323232;
+    --profileImgBg: #eeeeee;
+    --profileImgBorder: #d3d3d3;
+    --btnPrimaryBg: rgb(235,126,15);
+    --btnPrimaryGradient: linear-gradient(0deg, rgba(235,126,15,1) 0%, rgba(205,99,2,1) 100%);
+    --btnPrimaryBorder: #d56804;
+}

@@ -1,0 +1,22 @@
+.footer-main {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bgFooter);
+    box-shadow: 0 -2px 8px var(--shadowColor);
+    z-index: 10;
+}
+
+.footer-main--nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.nav-items > svg {
+    max-width: 40px;
+    max-height: 40px;
+}
