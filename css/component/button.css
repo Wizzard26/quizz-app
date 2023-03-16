@@ -1,0 +1,19 @@
+.btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 25px auto 15px;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: var(--btnPrimaryBg);
+    background: var(--btnPrimaryGradient);
+    border: 1px solid var(--btnPrimaryBorder);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    filter: brightness(90%);
+}
