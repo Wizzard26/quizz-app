@@ -9,5 +9,6 @@
 }
 
 .header-main--title {
+    color: var(--floatText);
     text-align: center;
 }

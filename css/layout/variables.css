@@ -1,11 +1,13 @@
 :root {
     --error: #be0000;
     --right: #6cce02;
+    --bodyBg: #fbfbfb;
     --floatText: #323232;
-    --bgHeader: #f2f2f2;
-    --bgFooter: #f2f2f2;
+    --bgHeader: #eeeeee;
+    --bgFooter: #eeeeee;
     --shadowColor: #444444;
     --bookmarColor: #323232;
+    --bookmarkedColor: #e47805;
     --cardBg: #efefef;
     --cardBorderColor: #969696;
     --cardShadow: #969696;
@@ -14,10 +16,26 @@
     --keyItemBg: #565656;
     --keyItemColor: #f2f2f2;
     --counterBg: #323232;
-    --counterColor: #323232;
+    --counterColor: #f2f2f2;
     --profileImgBg: #eeeeee;
     --profileImgBorder: #d3d3d3;
     --btnPrimaryBg: rgb(235,126,15);
     --btnPrimaryGradient: linear-gradient(0deg, rgba(235,126,15,1) 0%, rgba(205,99,2,1) 100%);
     --btnPrimaryBorder: #d56804;
+}
+
+/** DARK MODE **/
+
+:root.dark {
+    --bodyBg: #2b2b2b;
+    --bgHeader: #3c3c3c;
+    --bgFooter: #3c3c3c;
+    --shadowColor: #222222;
+    --cardBg: #151515;
+    --cardBorderColor: #111111;
+    --cardShadow: #222222;
+    --floatText: #f2f2f2;
+    --bookmarColor: #5e5c5c;
+
+
 }

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--bodyBg);
+}
+
 .main-content {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -14,6 +18,10 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+
+.main-content--new-entries--show {
+    padding-top: 50px;
 }
 
 .is--right {

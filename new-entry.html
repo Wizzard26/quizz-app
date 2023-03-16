@@ -10,70 +10,44 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header class="header-main">
-        <h1 class="header-main--title">Quiz App</h1>
-    </header>
-    <main class="main-content">
-        <section class="main-container main-content--profile">
-            <article class="card card-profile">
-                <header class="card-header">
-                    <div class="user-image">
-                        <img src="/image/user-dummy.jpg" alt="User">
-                    </div>
-                    <div class="user-name">User Name</div>
-                </header>
-                <div class="card-content-profile">
-                    <div class="about">
-                        <h2>About me</h2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, odit vitae! Adipisci inventore ipsam quisquam quos? Ad, aliquid, atque aut explicabo fuga fugit laudantium natus pariatur quos, rem sit ullam!
-                    </div>
-                    <div class="status">
-                        <div class="counter counter-user--questions">
-                            <span class="icon icon-quest">ICON</span>
-                            <span class="count-quest">23</span>
-                        </div>
-                        <div class="counter counter-user--bookmarks">
-                            <span class="icon icon-bookmarks">ICON</span>
-                            <span class="count-bookmarks">23</span>
-                        </div>
-                    </div>
-                    <div class="user-settings">
-                        <h3>Settings</h3>
-                        <div class="user-settings--options">
-                            <span class="label-darkmode">
-                                Darkmode:
-                            </span>
-                            <label for="darkmode" class="btn--switch">
-                                <input type="checkbox" name="darkmode" id="darkmode" data-js="dark-mode">
-                                <span class="btn--switch-round"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <footer class="card-footer">
-                </footer>
-            </article>
-        </section>
-    </main>
-    <footer class="footer-main">
-        <nav class="footer-main--nav" role="navigation" aria-label="Main">
-            <a class="nav-items nav-item-home is--active" href="./index.html" aria-label="Home">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<header class="header-main">
+    <h1 class="header-main--title">Quiz App</h1>
+</header>
+<main class="main-content">
+    <section class="main-container main-content--new-entries">
+        <article class="card entry-form">
+            <form action="addEntry" method="post" data-js="add-entry">
+                <label for="question">Your Question</label>
+                <textarea name="question" id="question" cols="30" rows="10"></textarea>
+                <label for="answer">Your Answers</label>
+                <input type="text" name="answer" id="answer">
+                <label for="tags">Tags</label>
+                <input type="text" name="tags" id="tags">
+                <button class="btn btn-primary" type="submit">Add new question</button>
+            </form>
+        </article>
+    </section>
+    <section class="main-container main-content--new-entries--show" data-js="new-entries"></section>
+</main>
+<footer class="footer-main">
+    <nav class="footer-main--nav" role="navigation" aria-label="Main">
+        <a class="nav-items nav-item-home" href="./index.html" aria-label="Home">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
                     <g transform="matrix(12 0 0 12 540 540)" id="10ea3cb2-8657-4132-992e-425b2f2881e6"  >
 <path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(101,101,101); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-50, -50)" d="M 50 92.875 C 26.358 92.875 7.125 73.642 7.125 50 C 7.125 26.358000000000004 26.358 7.125 50 7.125 C 73.642 7.125 92.875 26.358 92.875 50 C 92.875 73.642 73.642 92.875 50 92.875 z M 50 9.125 C 27.461 9.125 9.125 27.461 9.125 50 C 9.125 72.538 27.461 90.875 50 90.875 C 72.538 90.875 90.875 72.538 90.875 50 C 90.875 27.461 72.538 9.125 50 9.125 z" stroke-linecap="round" />
 </g>
-                    <g transform="matrix(11 0 0 11 538 521.42)" id="cb2b29ce-5f9c-4680-842d-81c66acacc85"  >
+                <g transform="matrix(11 0 0 11 538 521.42)" id="cb2b29ce-5f9c-4680-842d-81c66acacc85"  >
 <path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(101,101,101); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-50, -50)" d="M 63.019 21.854 L 70.30199999999999 21.854 C 71.288 21.854 72.13499999999999 22.698999999999998 72.13499999999999 23.686999999999998 L 72.13499999999999 35.858 L 86.28099999999999 45.538 C 86.987 46.007 87.175 46.94799999999999 86.70299999999999 47.651999999999994 C 86.234 48.31099999999999 85.29299999999999 48.498999999999995 84.58899999999998 48.028999999999996 L 50.002 24.298 L 15.365 48.03 C 14.708 48.5 13.768 48.357 13.299 47.606 C 12.828 46.948 13.016 46.008 13.674 45.539 L 48.825 21.477 C 49.06 21.148 49.482 20.96 49.905 20.96 C 50.376 20.913 50.845 21.101 51.175000000000004 21.477 L 61.136 28.291 L 61.136 23.687 C 61.137 22.7 61.983 21.854 63.019 21.854 z M 24.202 45.445 L 49.907 27.634 L 75.613 45.445 L 75.613 75.05199999999999 C 75.613 77.261 73.828 79.04599999999999 71.619 79.04599999999999 L 56.814 79.04599999999999 L 56.814 53.763 L 43.798 53.763 L 43.798 79.04599999999999 L 28.196 79.04599999999999 C 25.986 79.04599999999999 24.202 77.261 24.202 75.05199999999999 L 24.202 45.445 z" stroke-linecap="round" />
 </g>
 </svg>
-            </a>
+        </a>
 
-            <a class="nav-items nav-item-bookmarks" href="./bookmarks.html" aria-label="Bookmarks">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+        <a class="nav-items nav-item-bookmarks is--active" href="./bookmarks.html" aria-label="Bookmarks">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
                     <g transform="matrix(12 0 0 12 539.88 539.88)"  >
 <path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(101,101,101); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-50, -50)" d="M 50 92.875 C 26.358 92.875 7.125 73.642 7.125 50 C 7.125 26.358000000000004 26.358 7.125 50 7.125 C 73.642 7.125 92.875 26.358 92.875 50 C 92.875 73.642 73.642 92.875 50 92.875 z M 50 9.125 C 27.461 9.125 9.125 27.461 9.125 50 C 9.125 72.538 27.461 90.875 50 90.875 C 72.538 90.875 90.875 72.538 90.875 50 C 90.875 27.461 72.538 9.125 50 9.125 z" stroke-linecap="round" />
 </g>
-                    <g transform="matrix(7.11 0 0 7.11 556.55 561.88)"  >
+                <g transform="matrix(7.11 0 0 7.11 556.55 561.88)"  >
 <g style="" vector-effect="non-scaling-stroke"   >
 		<g transform="matrix(1.2 0 0 1.2 -23.01 1.44)"  >
 <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(101,101,101); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-26.99, -51.44)" d="M 17.167 17.104 C 19.436 16.122999999999998 21.89 15.937 24.470000000000002 16.491 L 36.80500000000001 85.472 C 34.534000000000006 86.884 32.07900000000001 87.06599999999999 29.439000000000007 86.085 C 25.328 63.133 21.277 40.119 17.167 17.104 z" stroke-linecap="round" />
@@ -84,13 +58,13 @@
 </g>
 </g>
 </svg>
-            </a>
-            <a class="nav-items nav-item-profile is--active" href="./profile.html" aria-label="User profile">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+        </a>
+        <a class="nav-items nav-item-profile" href="./profile.html" aria-label="User profile">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
                     <g transform="matrix(12 0 0 12 540 540)" id="10ea3cb2-8657-4132-992e-425b2f2881e6"  >
 <path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(101,101,101); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-50, -50)" d="M 50 92.875 C 26.358 92.875 7.125 73.642 7.125 50 C 7.125 26.358000000000004 26.358 7.125 50 7.125 C 73.642 7.125 92.875 26.358 92.875 50 C 92.875 73.642 73.642 92.875 50 92.875 z M 50 9.125 C 27.461 9.125 9.125 27.461 9.125 50 C 9.125 72.538 27.461 90.875 50 90.875 C 72.538 90.875 90.875 72.538 90.875 50 C 90.875 27.461 72.538 9.125 50 9.125 z" stroke-linecap="round" />
 </g>
-                    <g transform="matrix(7.52 0 0 7.52 537.33 517.77)"  >
+                <g transform="matrix(7.52 0 0 7.52 537.33 517.77)"  >
 <g style="" vector-effect="non-scaling-stroke"   >
 		<g transform="matrix(1.2 0 0 1.2 0.21 -14.88)"  >
 <ellipse style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(101,101,101); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  cx="0" cy="0" rx="18.519" ry="20.634" />
@@ -101,8 +75,8 @@
 </g>
 </g>
 </svg>
-            </a>
-        </nav>
-    </footer>
+        </a>
+    </nav>
+</footer>
 </body>
 </html>

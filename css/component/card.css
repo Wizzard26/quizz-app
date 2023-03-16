@@ -17,6 +17,7 @@
 
 .card-header-title {
     margin: 0;
+    color: var(--floatText);
 }
 
 .card-header-bookmark {
@@ -45,7 +46,17 @@
     bottom: -18px;
 }
 
+.card-header-bookmark a.is--bookmarked {
+    background-color: var(--bookmarkedColor);
+}
+
+.card-header-bookmark a.is--bookmarked:after {
+    border-left-color: var(--bookmarkedColor);
+    border-right-color: var(--bookmarkedColor);
+}
+
 .card-content-question {
+    color: var(--floatText);
 }
 
 .card-content-userinput {
@@ -64,7 +75,6 @@
 }
 
 .card-content-answer {
-    display: none;
     background-color: var(--cardAnswerBg);
     padding: 8px 10px 5px;
     border-radius: 5px;
@@ -126,4 +136,19 @@
 
 .counter-user--questions {
 
+}
+
+.card.entry-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card.entry-form form textarea {
+    height: 120px;
+}
+
+.card.entry-form form input {
+    height: 40px;
+    line-height: 40px;
 }
